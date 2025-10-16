@@ -18,11 +18,8 @@ const CONFIG = {
   ANCHOR_SELECTORS: [
     ".homepage-hero",
     ".hero",
-    "#hero",
-    ".hp-hero",
     ".main-hero",
     "section:has(.hero)",
-    "body",
   ],
 };
 function isHomePage() {
@@ -97,6 +94,8 @@ function injectStyles() {
     margin: 0 auto;
     padding: 20px 16px 32px;
     box-sizing: border-box;
+    height: 100%;
+    
     }
 
     @media (min-width: 576px){
@@ -329,7 +328,6 @@ function injectStyles() {
       color: var(--ebbk-muted);
       margin-right: 6px;
       font-size: 11px;
-      text-decoration: line-through;
     }
     
     @media (min-width: 993px) {
